@@ -6,6 +6,7 @@ import {
   IonToolbar,
   IonButtons,
   IonMenuButton,
+  IonDatetime,
 } from "@ionic/react";
 import ExploreContainer from "../components/ExploreContainer";
 
@@ -20,7 +21,8 @@ const Page1: React.FC = () => {
           <IonTitle>Home</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonDatetime></IonDatetime>
+      <IonContent>
         <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">Blank</IonTitle>
