@@ -12,7 +12,7 @@ import ExploreContainer from "../components/ExploreContainer";
 const Login: React.FC = () => {
   const navigation = useIonRouter();
   const doLogin = () => {
-    navigation.push("/app", "root", "replace");
+    navigation.push("/app", "forward", "replace");
   };
 
   return (
