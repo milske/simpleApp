@@ -44,7 +44,11 @@ const Menu: React.FC = () => {
           </IonContent>
         </IonMenu>
 
-        <IonRouterOutlet id="main">
+        <IonRouterOutlet
+          id="main"
+          onPointerEnterCapture={undefined}
+          onPointerLeaveCapture={undefined}
+        >
           <Route exact path="/app/page1" component={Page1} />
           <Route exact path="/app/page2" component={Page2} />
           <Redirect to="/app/page1" />

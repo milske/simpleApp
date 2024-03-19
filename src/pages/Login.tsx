@@ -6,8 +6,12 @@ import {
   IonToolbar,
   useIonRouter,
   IonButton,
+  IonCardContent,
+  IonCard,
+  IonCardHeader,
+  IonCardSubtitle,
+  IonCardTitle,
 } from "@ionic/react";
-import ExploreContainer from "../components/ExploreContainer";
 
 const Login: React.FC = () => {
   const navigation = useIonRouter();
@@ -19,12 +23,21 @@ const Login: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Page 1</IonTitle>
+          <IonTitle>Login to your account</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonCard>
+        <IonCardHeader>
+          <IonCardTitle>Welcome</IonCardTitle>
+          <IonCardSubtitle>to Gymnastics</IonCardSubtitle>
+        </IonCardHeader>
+        <IonCardContent>
+          Enter your username and password to log in to your account.
+        </IonCardContent>
+      </IonCard>
+      <IonContent>
         <IonButton onClick={() => doLogin()} expand="full">
-          login
+          Login
         </IonButton>
       </IonContent>
     </IonPage>

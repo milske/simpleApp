@@ -4,6 +4,8 @@ import {
   IonPage,
   IonTitle,
   IonToolbar,
+  IonButtons,
+  IonMenuButton,
 } from "@ionic/react";
 import ExploreContainer from "../components/ExploreContainer";
 
@@ -12,7 +14,10 @@ const Page2: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Page 1</IonTitle>
+          <IonButtons slot="start">
+            <IonMenuButton></IonMenuButton>
+          </IonButtons>
+          <IonTitle>News</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>

@@ -28,7 +28,10 @@ setupIonicReact();
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
-      <IonRouterOutlet>
+      <IonRouterOutlet
+        onPointerEnterCapture={undefined}
+        onPointerLeaveCapture={undefined}
+      >
         <Route exact path="/" component={Login} />
         <Route path="/app" component={Menu} />
       </IonRouterOutlet>
